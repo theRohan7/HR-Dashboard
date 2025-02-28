@@ -1,0 +1,138 @@
+main{
+    display: flex;
+    min-height: 100vh;
+}
+
+.dashboard-main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 3rem;
+    width: 100%;
+}
+
+.dashboard-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem 0.8rem 0rem;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(213, 215, 218);
+}
+
+.dashboard-nav-left{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+.searchbox{
+    position: relative;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.searchbox input{
+    border: none;
+    outline: none;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    background-color: #FAFAFA;
+    width: 100%;
+}
+
+.search-icon{
+    color: #B2B2B2;
+    width: 1.5rem;
+}
+
+
+
+.profile-btns{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.bell-icon{
+    position: relative;
+    cursor: pointer;
+}
+
+.bell-icon .notification{
+    position: absolute;
+    top: -0.2rem;
+    right: 0rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #FF5151;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.profile-btns img{
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+
+.profile-btns .username{
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    color: #161E54;
+    font-weight: 600;
+}
+
+
+.heading{
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: #161E54;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+@media (max-width: 768px) {
+    .dashboard-main{
+        padding-left: 0rem; 
+    }
+    .dashboard-nav{
+        padding: 1rem 2rem;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+   
+
+    .profile-btns .username{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-main{
+        padding-left: 0rem;
+    }
+    .dashboard-nav{
+        padding: 1rem 2rem;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .searchbox{
+        background-color: transparent;
+        border: none;
+    }
+
+    .searchbox input{
+        display: none;
+    }
+}

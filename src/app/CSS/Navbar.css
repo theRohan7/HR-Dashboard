@@ -1,0 +1,69 @@
+.sideNav{
+   background-color: #FAFAFA; 
+   padding: 1.5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.logo{
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.nav-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0.5rem;
+}
+
+.main, .other{
+    font-size: clamp(0.5rem, 2vw, 0.8rem);
+    color: #686868;
+    font-weight: 500;
+
+}
+
+.nav-btns{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-btns a{
+    font-size: clamp(0.5rem, 2vw, 1.1rem);
+    color: #686868;
+    font-weight: 500;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .sideNav {
+        padding: 1rem 0.5rem;
+
+    }
+    .nav-section{
+        align-items: center;
+    }
+    .nav-btns a{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .sideNav {
+        display: none;
+    }
+}
