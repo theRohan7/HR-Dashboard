@@ -3,12 +3,12 @@
     flex-direction: column;
     gap: 0.2rem;
     padding: 0.5rem 1rem;
-    width: 13vw;
     border-radius: 0.5rem;
+    width: 100%;
 }
 
 .card-title, .graphcard-title{
-    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    font-size: clamp(0.8rem, 2vw, 1rem);
     color: #161E54;
     font-weight: 600;
 }
@@ -32,7 +32,7 @@
 
 .graphcard-cotainer{
     border: 1px solid #E0E0E0;
-    width: 20.2vw;
+    width: 100%;
     padding: 0.5rem 1rem;
     border-radius: 10px;
     display: flex;

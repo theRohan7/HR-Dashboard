@@ -8,7 +8,7 @@ function Announcement() {
       <div className="announcement-header">
         <h3>Announcement</h3>
         <div className="dropdown" >
-          Today, 13 Sep 2021 <ChevronDown />
+          Today, 13 Sep 2021 <ChevronDown  color="#B2B2B2" />
         </div>
       </div>
 
@@ -20,8 +20,8 @@ function Announcement() {
               <p className="announcement-timeline" >{item.timeline}</p>
             </div>
             <div className="announcement-icon" >
-              <Pin />
-              <Ellipsis />
+              <Pin fill="#B2B2B2" color="#B2B2B2" />
+              <Ellipsis fill="#B2B2B2" color="#B2B2B2" />
             </div>
           </div>
         ))}

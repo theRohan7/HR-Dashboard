@@ -53,37 +53,70 @@ const announcements = [
     },
 ]
 
+const scheduleData = [
+    {
+        id: 22,
+        title: 'Review Candidate application',
+        timeline: 'Today- 11:30 AM',
+        priority: 'High'
+    },
+    {
+        id: 23,
+        title: 'Interview with candidates',
+        timeline: 'Today- 10:30 AM',
+        priority: 'other'
+    },
+    {
+        id: 24,
+        title: 'Short meeting with product designer from IT Departement',
+        timeline: 'Today- 09:15 AM',
+        priority: 'other'
+    },
+    {
+        id: 25,
+        title: 'Standup Meeting',
+        timeline: 'Today- 09:00 AM',
+        priority: 'other'
+    },
+    {
+        id: 26,
+        title: 'Report to HR',
+        timeline: 'Today- 08:45 AM',
+        priority: 'other'
+    },
+]
+
 
 
 const sideNavMain = [
     {
         id:1,
         title:"Dashboard",
-        icon:  <LayoutDashboard />,
+        icon:  <LayoutDashboard fill="#FF5151" color="#FF5151"   />,
         url:"/dashboard"
     },
     {
         id:2,
         title:"Recruitment",
-        icon:<UserPlus />,
+        icon:<UserPlus fill="#B2B2B2" color="#B2B2B2" />,
         url:"/recruitment"
     },
     {
         id:3,
         title:"Schedule",
-        icon:<Calendar1 />,
+        icon:<Calendar1  color="#B2B2B2"  />,
         url:"/schedule"
     },
     {
         id:4,
         title:"Employee",
-        icon:<Users />,
+        icon:<Users fill="#B2B2B2" color="#B2B2B2" />,
         url:"/employee"
     },
     {
         id:5,
         title:"Department",
-        icon:<CircleDot />,
+        icon:<CircleDot  color="#B2B2B2" />,
         url:"/department"
     },  
 ]
@@ -92,17 +125,17 @@ const sideNavOther = [
     {
         id:6,
         title:"Support",
-        icon:<Headset />,
+        icon:<Headset  color="#B2B2B2" />,
         url:"/support"
     },
     {
         id:7,
         title:"Settings",
-        icon:<Settings />,
+        icon:<Settings  color="#B2B2B2" />,
         url:"/settings"
     }
 
 ]
 
 
-export {cardsData,sideNavMain, sideNavOther, graphCardData, announcements}
+export {cardsData,sideNavMain, sideNavOther, graphCardData, announcements, scheduleData}
