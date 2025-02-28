@@ -21,6 +21,38 @@ const cardsData = [
     },
 ]
 
+const graphCardData = [
+    {
+        id: 12,
+        title: 'Total Employees',
+        value: 216,
+        demography: {men: 120, women:96},
+        remark: `+2% Past month`
+    },
+    {
+        id: 13,
+        title: 'Talent Requests',
+        value: 16,
+        demography: {men: 6, women:10},
+        remark: `+5% Past month`
+    },
+]
+
+const announcements = [
+    {
+        title: 'Outing schedule for every departement',
+        timeline:  '5 Minutes ago'
+    },
+    {
+        title: 'Meeting HR Department',
+        timeline:  'Yesterday, 12:30 PM'
+    },
+    {
+        title: 'IT Department need two more talents for UX/UI Designer position',
+        timeline:  'Yesterday, 09:15 AM'
+    },
+]
+
 
 
 const sideNavMain = [
@@ -73,4 +105,4 @@ const sideNavOther = [
 ]
 
 
-export {cardsData,sideNavMain, sideNavOther}
+export {cardsData,sideNavMain, sideNavOther, graphCardData, announcements}

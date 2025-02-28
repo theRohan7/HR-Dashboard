@@ -1,0 +1,75 @@
+.announcement-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid #E0E0E0;
+}
+
+.announcement-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.announcement-header h3{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: #161E54;
+    font-weight: 600;
+    line-height: 30px;
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    border: 1px solid #EFEFEF;
+    padding: 0.25rem;
+}
+
+.announcement-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow-y: auto;
+}
+
+.announcement{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #FAFAFA;
+    border: 0.5px solid #E0E0E0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.announcement-title{
+    font-size: 1rem;
+    color: #303030 ;
+    font-weight: 400;
+}
+
+.announcement-timeline{
+    font-size: 0.7rem;
+    color: #303030 ;
+    font-weight: 400;
+}
+
+
+
+.announcement-icon{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.announcement-container button{
+    color: #FF5151;
+    font-size: 1rem;
+    font-weight: 500;
+}
